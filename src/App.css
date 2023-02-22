@@ -1,6 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+   }
+
 #root {
   color: white;
   background-color: black;
+  box-sizing: border-box;
+}
+
+
+
+main {
+  height: 80vh;
+}
+
+footer {
+  height: 10vh;
 }
 
 .NavLink {
@@ -10,4 +26,6 @@
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 10vh;
 }

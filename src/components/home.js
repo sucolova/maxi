@@ -2,10 +2,10 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="Home">
+    <main className="Home">
         <h1>home </h1>
         <p>lorem ipsum asdfkljasldgjaskj</p>
-    </div>
+    </main>
   );
 }
 

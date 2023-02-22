@@ -23,6 +23,11 @@ function App() {
         <Route path='/about' element={<About />} />
       </Routes>
 
+      <footer>
+        <p>lorem ipsjum lorem ipsum slsafj lasfdjhi asfkljasf lasdlkj</p>
+
+        </footer>
+
     </Router>
   );
 }
