@@ -1,31 +1,91 @@
 * {
-  padding: 0;
-  margin: 0;
-   }
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --primary: #1C1B1B;
+    --secondary: #8C8C8C;
+    --background: #FFFFFF;
+    --tertiary: #F4F4F4;
+}
+
+html {
+    font-size: 16px;
+}
+
 
 #root {
-  color: white;
-  background-color: black;
-  box-sizing: border-box;
+    color: var(--primary);
+    background-color: var(--background);
+    box-sizing: border-box;
 }
 
 
 
 main {
-  height: 80vh;
+    height: 80vh;
 }
 
 footer {
-  height: 10vh;
+    height: 10vh;
 }
 
-.NavLink {
-  color: white;
+a {
+    color: var(--primary);
+    font-size: 1.5rem; 
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+/*make greeting p flow from right to left*/
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.target {
+    font-weight: bold;
+    font-size: 2.5vw;
+    animation-name: rigthToLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rightToLeft {
+0% {
+    transform: translateX(100vw);
+}
+100% {
+    transform: translateX(-100vw);
+}
+
 }

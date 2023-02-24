@@ -1,9 +1,15 @@
 function Greeting() {
-return (
-  <main>
-  <h1>Hallo, das ist die startseite, mit einem coolen bild und fetziger überschrift </h1>
-    </main>
-);
+    return (
+        <main>
+            <div className="wrapper">
+                <p className="target">Maximilian </p>
+                <p className="target">Maximilian </p>
+                <p className="target">Maximilian </p>
+                <p className="target">Maximilian </p>
+                <p className="target">Maximilian </p>
+            </div>
+        </main>
+    );
 }
 
 export default Greeting;
