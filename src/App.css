@@ -22,16 +22,6 @@ html {
     box-sizing: border-box;
 }
 
-
-
-main {
-    height: 80vh;
-}
-
-footer {
-    height: 10vh;
-}
-
 a {
     color: var(--primary);
     font-size: 1.5rem; 
@@ -56,25 +46,34 @@ a:active {
 }
 
 header {
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    background-color: #FFFFFFDC; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    width: 100vw;
 }
+
+/*greeting / home*/
 
 /*make greeting p flow from right to left*/
 
 .wrapper {
     display: flex;
     flex-direction: row;
+    height: 20vh;
     width: 100vw;
     justify-content: space-around;
+    align-items: center;
 }
 
 .target {
     font-weight: bold;
-    font-size: 2.5vw;
-    animation-name: rigthToLeft;
+    font-size: 3vw;
+    animation-name: rightToLeft;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -89,3 +88,35 @@ header {
 }
 
 }
+
+.first,.second {
+    height: 70vh;
+
+}
+
+.first h1, .second h2 {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 5rem;
+}
+
+.first p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50vw;
+    margin: 2rem auto;
+}
+
+.second ul {
+    display: flex;
+    width: 60vw;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.second ul li {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
